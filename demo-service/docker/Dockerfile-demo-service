@@ -1,0 +1,7 @@
+# Dockerfile para api1
+FROM openjdk:11-jre-slim
+
+WORKDIR /app
+COPY ./target/demo-service.jar /app
+
+CMD ["java", "-jar", "demo-service.jar"]

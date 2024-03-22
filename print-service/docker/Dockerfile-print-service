@@ -1,0 +1,7 @@
+# Dockerfile para api1
+FROM openjdk:11-jre-slim
+
+WORKDIR /app
+COPY ./target/print-service.jar /app
+
+CMD ["java", "-jar", "print-service.jar"]
