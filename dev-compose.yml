@@ -1,18 +1,18 @@
 version: '3.8'
 
 services:
-  api1:
-    build: ./demo-service/docker/.  # Ruta al Dockerfile de api1
-    ports:
-      - "8081:8081"  # Mapeo de puertos
-    networks:
-      - my_network  # Nombre de la red
-  api2:
-    build: ./child-service/docker/.  # Ruta al Dockerfile de api2
-    ports:
-      - "8082:8082"  # Mapeo de puertos
-    networks:
-      - my_network  # Nombre de la red
+#  api1:
+#    build: ./demo-service/docker/.  # Ruta al Dockerfile de api1
+#    ports:
+#      - "8081:8081"  # Mapeo de puertos
+#    networks:
+#      - my_network  # Nombre de la red
+#  api2:
+#    build: ./child-service/docker/.  # Ruta al Dockerfile de api2
+#    ports:
+#      - "8082:8082"  # Mapeo de puertos
+#    networks:
+#      - my_network  # Nombre de la red
 
   jaeger:
     image: jaegertracing/all-in-one:1.9
